@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace TDD_GeometriskaFormer_JosefinPersson
 {
-    internal interface IGeometricThing  // gör vad???
+    public interface IGeometricThing  // properies och metoder...som alla har gemensamt...
     {
+        //area
+        float area { get; set; }   // skriv aldrig modifiers i ett interface, allt måste vara public så det sker automatiskt
+        //omkrets
+        float perimeter { get; set; }
+
+        float[] totalPerimeter { get; set; }
     }
 }

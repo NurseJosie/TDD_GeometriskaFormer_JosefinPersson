@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD_GeometriskaFormer_JosefinPersson", "TDD_GeometriskaFormer_JosefinPersson\TDD_GeometriskaFormer_JosefinPersson.csproj", "{0E58307F-4A34-42F4-9921-ECD50666E60B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDD_GeometriskaFormer_JosefinPersson", "TDD_GeometriskaFormer_JosefinPersson\TDD_GeometriskaFormer_JosefinPersson.csproj", "{0E58307F-4A34-42F4-9921-ECD50666E60B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD_GeometriskaFormer_JosefinPerssonTests", "TDD_GeometriskaFormer_JosefinPerssonTests\TDD_GeometriskaFormer_JosefinPerssonTests.csproj", "{8BA01890-0ACA-47D8-95FA-80C921D07BEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0E58307F-4A34-42F4-9921-ECD50666E60B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E58307F-4A34-42F4-9921-ECD50666E60B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E58307F-4A34-42F4-9921-ECD50666E60B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BA01890-0ACA-47D8-95FA-80C921D07BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA01890-0ACA-47D8-95FA-80C921D07BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA01890-0ACA-47D8-95FA-80C921D07BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA01890-0ACA-47D8-95FA-80C921D07BEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
