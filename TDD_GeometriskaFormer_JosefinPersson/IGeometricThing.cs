@@ -13,6 +13,6 @@ namespace TDD_GeometriskaFormer_JosefinPersson
         //omkrets
         float perimeter { get; set; }
 
-        float[] totalPerimeter { get; set; } // behövs som property?
+        //float[] totalPerimeter { get; set; } // behövs som property?
     }
 }

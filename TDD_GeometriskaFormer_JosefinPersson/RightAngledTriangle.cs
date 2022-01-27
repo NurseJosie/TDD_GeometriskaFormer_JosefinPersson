@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TDD_GeometriskaFormer_JosefinPersson
 {
-    internal class RightAngledTriangle : Triangle, IGeometricCalculator, IGeometricThing 
+    public class RightAngledTriangle : Triangle, IGeometricCalculator, IGeometricThing 
     {
         public float area { get; set; }
         public float perimeter { get; set; }
@@ -15,7 +15,7 @@ namespace TDD_GeometriskaFormer_JosefinPersson
         public float hypotenuse { get; set; }
 
 
-        float[] IGeometricThing.totalPerimeter { get; set; }
+        //float[] IGeometricThing.totalPerimeter { get; set; }
 
         public float CalculateArea()
         {
@@ -31,9 +31,9 @@ namespace TDD_GeometriskaFormer_JosefinPersson
             return rat.perimeter;
         }
 
-        public float CalculatePerimeterOfAll()
-        {
-            throw new NotImplementedException();
-        }
+        //public float CalculatePerimeterOfAll()
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

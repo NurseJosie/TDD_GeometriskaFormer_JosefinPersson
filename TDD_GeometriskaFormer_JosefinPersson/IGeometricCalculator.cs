@@ -13,6 +13,6 @@ namespace TDD_GeometriskaFormer_JosefinPersson
         //omkrets
         float CalculatePerimeter(); 
         //omkrets av allt
-        float CalculatePerimeterOfAll(/*IGeometricThing.totalPerimeter[] totalPerimeters*/); 
+        //float CalculatePerimeterOfAll(/*IGeometricThing.totalPerimeter[] totalPerimeters*/); 
     }
 }

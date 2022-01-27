@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TDD_GeometriskaFormer_JosefinPersson //-----------LIKSIDIG TRIANGEL--- ALLA SIDOR LIKA LÅNGA-------
 {
-    internal class EquilateralTriangle : Triangle, IGeometricCalculator, IGeometricThing
+    public class EquilateralTriangle : Triangle, IGeometricCalculator, IGeometricThing
     {
         public float area { get; set; }
         public float perimeter { get; set; }
@@ -14,7 +14,7 @@ namespace TDD_GeometriskaFormer_JosefinPersson //-----------LIKSIDIG TRIANGEL---
         public float height { get; set; }
 
 
-        float[] IGeometricThing.totalPerimeter { get; set; }
+       // float[] IGeometricThing.totalPerimeter { get; set; }
 
         public float CalculateArea()
         {
@@ -30,9 +30,9 @@ namespace TDD_GeometriskaFormer_JosefinPersson //-----------LIKSIDIG TRIANGEL---
             return et.perimeter;
         }
 
-        public float CalculatePerimeterOfAll()
-        {
-            throw new NotImplementedException();
-        }
+        //public float CalculatePerimeterOfAll()
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace TDD_GeometriskaFormer_JosefinPersson
 {
-    internal class Rectangle : IGeometricThing, IGeometricCalculator
+    public class Rectangle : IGeometricThing, IGeometricCalculator
     {
         public float area { get; set; }
         public float perimeter { get; set; }
         public float width { get; set; } //width måste vara längre än height
         public float height { get; set; }   //height måste vara kortare än width
-        public float[] totalPerimeter { get; set; }
+        //public float[] totalPerimeter { get; set; }
 
         public float CalculateArea()
         {
@@ -52,9 +52,9 @@ namespace TDD_GeometriskaFormer_JosefinPersson
                 return rectangle.perimeter;
             }
 
-        public float CalculatePerimeterOfAll()
-        {
-            throw new NotImplementedException();
-        }
+        //public float CalculatePerimeterOfAll()
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

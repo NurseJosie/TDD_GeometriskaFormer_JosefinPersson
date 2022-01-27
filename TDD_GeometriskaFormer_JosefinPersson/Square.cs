@@ -11,7 +11,7 @@ namespace TDD_GeometriskaFormer_JosefinPersson
         public float area { get; set; }
         public float perimeter { get; set; }
         public float side { get; set; }
-        public float[] totalPerimeter { get; set; }
+       // public float[] totalPerimeter { get; set; }
 
         public float CalculateArea()
         {
@@ -27,36 +27,45 @@ namespace TDD_GeometriskaFormer_JosefinPersson
             return square.perimeter;
         }
 
-        public float CalculatePerimeterOfAll()
-        {
-            // ???
-            //    public class AreaCalculator    // från lätta solid-övningar, lägg ihop allt i en area-variabel. vart ska denna ligga? i alla shapes? adderas till vart?
-            //{
-            //    public double Area(Rectangle[] shapes)
-            //    {
-            //        double area = 0;
-            //        foreach (var shape in shapes)
-            //        {
-            //            area += shape.Width * shape.Height;
-            //        }
-            //        return area;
-            //    }
-            //}
-        //    public class AreaCalculator
+        //public float CalculatePerimeterOfAll()
         //{
-        //    public double Area(Shape[] shapes)
-        //    {
-        //        double area = 0;
-        //        foreach (var shape in shapes)
-        //        {
-        //            area += shape.Area();
-        //        }
-        //        return area;
-        //    }
-        //}
-  
+        //    // från lätta solid-övningar, lägg ihop allt i en area-variabel. vart ska denna ligga? i alla shapes? adderas till vart?
 
-            return CalculatePerimeter(); // ???
-        }
+        //    //    public class AreaCalculator       
+        //    //{
+        //    //    public double Area(Rectangle[] shapes)
+        //    //    {
+        //    //        double area = 0;
+        //    //        foreach (var shape in shapes)
+        //    //        {
+        //    //            area += shape.Width * shape.Height;
+        //    //        }
+        //    //        return area;
+        //    //    }
+        //    //}
+        //    //    public class AreaCalculator
+        //    //{
+        //    //    public double Area(Shape[] shapes)
+        //    //    {
+        //    //        double area = 0;
+        //    //        foreach (var shape in shapes)
+        //    //        {
+        //    //            area += shape.Area();
+        //    //        }
+        //    //        return area;
+        //    //    }
+        //    //}
+        //    //Square square = new Square();
+        //    //square.perimeter = square.side * 4;
+
+        //    //(totalPerimeter[] Square)
+        //    //{
+        //    //    foreach (var square in Square)
+        //    //    {
+        //    //        totalPerimeter[] += square.perimeter();
+        //    //    }
+        //    //}
+        //    return totalPerimeter[];
+        //}
     }
 }

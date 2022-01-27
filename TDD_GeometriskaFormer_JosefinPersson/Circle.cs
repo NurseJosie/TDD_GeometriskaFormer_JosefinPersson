@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace TDD_GeometriskaFormer_JosefinPersson
 {
-    internal class Circle : IGeometricThing, IGeometricCalculator
+    public class Circle : IGeometricThing, IGeometricCalculator
     {
         // radius
         public float area { get; set; }
         public float perimeter { get; set; }
         public float radius { get; set; }
-        public float[] totalPerimeter { get; set; }
+       // public float[] totalPerimeter { get; set; }
 
         public float CalculateArea()
         {
@@ -28,9 +28,9 @@ namespace TDD_GeometriskaFormer_JosefinPersson
             return circle.perimeter;
         }
 
-        public float CalculatePerimeterOfAll()
-        {
-            throw new NotImplementedException();
-        }
+        //public float CalculatePerimeterOfAll()
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
