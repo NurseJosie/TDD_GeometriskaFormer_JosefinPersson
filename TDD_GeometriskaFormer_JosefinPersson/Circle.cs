@@ -17,15 +17,14 @@ namespace TDD_GeometriskaFormer_JosefinPersson
         public float CalculateArea()
         {
             Circle circle = new Circle();
-           // circle.area = Math.Pow(circle.radius, circle.radius) * Math.PI;
+            circle.area = (float)((circle.radius * circle.radius) * Math.PI);          // radie upphöjt till 2 * PI
             return circle.area;
-
         }
 
         public float CalculatePerimeter()
         {
             Circle circle = new Circle();
-            //circle.perimeter = (circle.radius * 2) * Math.PI;
+            circle.perimeter = (float)((circle.radius * 2) * Math.PI);    //diametern * PI
             return circle.perimeter;
         }
 

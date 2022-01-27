@@ -8,14 +8,10 @@ namespace TDD_GeometriskaFormer_JosefinPersson
 {
     internal class Rectangle : IGeometricThing, IGeometricCalculator
     {
-        // side a height
-        // side b width 
-        // sida a och b får inte vara lika långa
-        //sida a får inte vara längre än sida b
         public float area { get; set; }
         public float perimeter { get; set; }
-        public float width { get; set; }
-        public float height { get; set; }   
+        public float width { get; set; } //width måste vara längre än height
+        public float height { get; set; }   //height måste vara kortare än width
         public float[] totalPerimeter { get; set; }
 
         public float CalculateArea()
@@ -24,7 +20,7 @@ namespace TDD_GeometriskaFormer_JosefinPersson
             rectangle.area = rectangle.width * rectangle.height;
             return rectangle.area;
 
-        //    public class AreaCalculator
+        //    public class AreaCalculator   // kod från övningsuppgift
         //{
         //    public double Area(Rectangle[] shapes)
         //    {
