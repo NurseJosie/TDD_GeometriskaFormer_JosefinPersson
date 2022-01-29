@@ -14,25 +14,24 @@ namespace TDD_GeometriskaFormer_JosefinPersson     // -------LIKBENT TRIANGEL---
         public float baseSide { get; set; }
         public float height { get; set; }
 
-       // float[] IGeometricThing.totalPerimeter { get; set; }
-
         public float CalculateArea()
-        {
-            IsoscelesTriangle it = new IsoscelesTriangle();
-            it.area = it.baseSide * it.height / 2;           // korrekt uträkning???
-            return it.area;
+        {     
+            return baseSide * height / 2;
         }
+
+        //public float CalculateArea(Square square)
+        //{
+        //    return square.CalculateArea();
+        //}
 
         public float CalculatePerimeter()
         {
-            IsoscelesTriangle it = new IsoscelesTriangle();
-            it.perimeter = it.sideA * 2 + baseSide;
-            return it.perimeter;
+            return sideA * 2 + baseSide;
         }
 
-        //public float CalculatePerimeterOfAll()
+        //public float CalculatePerimeter(Square square)
         //{
-        //    throw new NotImplementedException();
+        //    return square.CalculatePerimeter();
         //}
     }
 }

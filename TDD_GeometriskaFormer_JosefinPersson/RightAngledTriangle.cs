@@ -14,26 +14,24 @@ namespace TDD_GeometriskaFormer_JosefinPersson
         public float baseSide { get; set; }   // phytagoras....
         public float hypotenuse { get; set; }
 
-
-        //float[] IGeometricThing.totalPerimeter { get; set; }
-
         public float CalculateArea()
         {
-            RightAngledTriangle rat = new RightAngledTriangle();
-            rat.area = rat.baseSide * rat.sideA / 2;
-            return rat.area;
+            return baseSide * sideA / 2;
         }
+
+        //public float CalculateArea(Square square)
+        //{
+        //    return square.CalculateArea();
+        //}
 
         public float CalculatePerimeter()
         {
-            RightAngledTriangle rat = new RightAngledTriangle();
-            rat.perimeter = rat.baseSide + rat.sideA + rat.hypotenuse;
-            return rat.perimeter;
+            return baseSide + sideA + hypotenuse;
         }
 
-        //public float CalculatePerimeterOfAll()
+        //public float CalculatePerimeter(Square square)
         //{
-        //    throw new NotImplementedException();
+        //    return square.CalculatePerimeter();
         //}
     }
 }

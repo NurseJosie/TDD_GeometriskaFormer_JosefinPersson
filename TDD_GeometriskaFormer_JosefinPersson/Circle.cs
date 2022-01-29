@@ -8,29 +8,29 @@ namespace TDD_GeometriskaFormer_JosefinPersson
 {
     public class Circle : IGeometricThing, IGeometricCalculator
     {
-        // radius
         public float area { get; set; }
         public float perimeter { get; set; }
         public float radius { get; set; }
-       // public float[] totalPerimeter { get; set; }
 
         public float CalculateArea()
         {
-            Circle circle = new Circle();
-            circle.area = (float)((circle.radius * circle.radius) * Math.PI);          // radie upphöjt till 2 * PI
-            return circle.area;
+           // radie upphöjt till 2 * PI
+            return (float)((radius * radius) * Math.PI);
         }
+
+        //public float CalculateArea(Square square)
+        //{
+        //    return square.CalculateArea();
+        //}
 
         public float CalculatePerimeter()
         {
-            Circle circle = new Circle();
-            circle.perimeter = (float)((circle.radius * 2) * Math.PI);    //diametern * PI
-            return circle.perimeter;
+            return (float)((radius * 2) * Math.PI);    //diametern * PI
         }
 
-        //public float CalculatePerimeterOfAll()
+        //public float CalculatePerimeter(Square square)
         //{
-        //    throw new NotImplementedException();
+        //    return square.CalculatePerimeter();
         //}
     }
 }

@@ -13,26 +13,24 @@ namespace TDD_GeometriskaFormer_JosefinPersson //-----------LIKSIDIG TRIANGEL---
         public float sideA { get; set; }  // alla sidor lika långa
         public float height { get; set; }
 
-
-       // float[] IGeometricThing.totalPerimeter { get; set; }
-
         public float CalculateArea()
-        {
-            EquilateralTriangle et = new EquilateralTriangle();
-            et.area = et.sideA * height / 2;            // korrekt uträkning???
-            return et.area;
+        {   
+            return sideA * height / 2;
         }
+
+        //public float CalculateArea(Square square)
+        //{
+        //    return square.CalculateArea();
+        //}
 
         public float CalculatePerimeter()
         {
-            EquilateralTriangle et = new EquilateralTriangle();
-            et.perimeter = sideA * 3;
-            return et.perimeter;
+            return sideA * 3;
         }
 
-        //public float CalculatePerimeterOfAll()
+        //public float CalculatePerimeter(Square square)
         //{
-        //    throw new NotImplementedException();
+        //    return square.CalculatePerimeter();
         //}
     }
 }
