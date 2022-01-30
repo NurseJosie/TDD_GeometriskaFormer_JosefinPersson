@@ -1,37 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TDD_GeometriskaFormer_JosefinPersson     // -------LIKBENT TRIANGEL-----benen är lika långa, basen...--------
+﻿namespace TDD_GeometriskaFormer_JosefinPersson     // ---------LIKBENT TRIANGEL------------
 {
-    public class IsoscelesTriangle: Triangle, IGeometricThing, IGeometricCalculator
+    public class IsoscelesTriangle : IGeometricThing, IGeometricCalculator
     {
-        public float area { get; set; }
-        public float perimeter { get; set; }
-        public float sideA { get; set; }  // 2 lika långa sidor
-        public float baseSide { get; set; }
-        public float height { get; set; }
+        public float Area { get; set; }
+        public float Perimeter { get; set; }
+        public float SideA { get; set; }
+        public float BaseSide { get; set; }
+        public float Height { get; set; }
 
+        /// <summary>
+        /// Calculates the area.
+        /// </summary>
         public float CalculateArea()
-        {     
-            return baseSide * height / 2;
+        {
+            return BaseSide * Height / 2;
         }
 
-        //public float CalculateArea(Square square)
-        //{
-        //    return square.CalculateArea();
-        //}
-
+        /// <summary>
+        /// Calculates the perimeter.
+        /// </summary>
         public float CalculatePerimeter()
         {
-            return sideA * 2 + baseSide;
+            return SideA * 2 + BaseSide;
         }
-
-        //public float CalculatePerimeter(Square square)
-        //{
-        //    return square.CalculatePerimeter();
-        //}
     }
 }

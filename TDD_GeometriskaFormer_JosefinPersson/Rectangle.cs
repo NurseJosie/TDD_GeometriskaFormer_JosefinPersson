@@ -1,34 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TDD_GeometriskaFormer_JosefinPersson
+﻿namespace TDD_GeometriskaFormer_JosefinPersson
 {
     public class Rectangle : IGeometricThing, IGeometricCalculator
     {
-        public float area { get; set; }
-        public float perimeter { get; set; }
-        public float width { get; set; } //width måste vara längre än height
-        public float height { get; set; }   //height måste vara kortare än width
+        public float Area { get; set; }
+        public float Perimeter { get; set; }
+        public float Width { get; set; }
+        public float Height { get; set; }
 
+        /// <summary>
+        /// Calculates the area.
+        /// </summary>
         public float CalculateArea()
         {
-            return width * height;
+            return Width * Height;
         }
-        //public float CalculateArea(Square square)
-        //{
-        //    return square.CalculateArea();
-        //}
 
+        /// <summary>
+        /// Calculates the perimeter.
+        /// </summary>
         public float CalculatePerimeter()
         {
-            return width * 2 + height * 2;
+            return Width * 2 + Height * 2;
         }
-        //public float CalculatePerimeter(Square square)
-        //{
-        //    return square.CalculatePerimeter();
-        //}
     }
 }

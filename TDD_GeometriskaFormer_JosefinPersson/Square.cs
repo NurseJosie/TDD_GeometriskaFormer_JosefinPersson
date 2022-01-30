@@ -1,34 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TDD_GeometriskaFormer_JosefinPersson
+﻿namespace TDD_GeometriskaFormer_JosefinPersson
 {
     public class Square : IGeometricThing, IGeometricCalculator
     {
-        public float area { get; set; }
-        public float perimeter { get; set; }
-        public float side { get; set; }
+        public float Area { get; set; }
+        public float Perimeter { get; set; }
+        public float Side { get; set; }
 
+        /// <summary>
+        /// Calculates the area.
+        /// </summary>
         public float CalculateArea()
         {
-            return side * side;
+            return Side * Side;
         }
 
-        //public float CalculateArea(Square square)
-        //{
-        //    return square.CalculateArea();
-        //}
+        /// <summary>
+        /// Calculates the perimeter.
+        /// </summary>
         public float CalculatePerimeter()
         {
-            return side * 4;
+            return Side * 4;
         }
-
-        //public float CalculatePerimeter(Square square)
-        //{
-        //    return square.CalculatePerimeter();
-        //}
     }
 }

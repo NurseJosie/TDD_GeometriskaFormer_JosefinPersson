@@ -1,37 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TDD_GeometriskaFormer_JosefinPersson
+﻿namespace TDD_GeometriskaFormer_JosefinPersson
 {
-    public class RightAngledTriangle : Triangle, IGeometricCalculator, IGeometricThing 
+    public class RightAngledTriangle : IGeometricCalculator, IGeometricThing
     {
-        public float area { get; set; }
-        public float perimeter { get; set; }
-        public float sideA { get; set; }
-        public float baseSide { get; set; }   // phytagoras....
-        public float hypotenuse { get; set; }
+        public float Area { get; set; }
+        public float Perimeter { get; set; }
+        public float SideA { get; set; }
+        public float BaseSide { get; set; }
+        public float Hypotenuse { get; set; }
 
+        /// <summary>
+        /// Calculates the area.
+        /// </summary>
         public float CalculateArea()
         {
-            return baseSide * sideA / 2;
+            return BaseSide * SideA / 2;
         }
 
-        //public float CalculateArea(Square square)
-        //{
-        //    return square.CalculateArea();
-        //}
-
+        /// <summary>
+        /// Calculates the perimeter.
+        /// </summary>
         public float CalculatePerimeter()
         {
-            return baseSide + sideA + hypotenuse;
+            return BaseSide + SideA + Hypotenuse;
         }
-
-        //public float CalculatePerimeter(Square square)
-        //{
-        //    return square.CalculatePerimeter();
-        //}
     }
 }

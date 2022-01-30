@@ -1,36 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TDD_GeometriskaFormer_JosefinPersson //-----------LIKSIDIG TRIANGEL--- ALLA SIDOR LIKA LÅNGA-------
+﻿namespace TDD_GeometriskaFormer_JosefinPersson //-----------LIKSIDIG TRIANGEL--------------
 {
-    public class EquilateralTriangle : Triangle, IGeometricCalculator, IGeometricThing
+    public class EquilateralTriangle : IGeometricCalculator, IGeometricThing
     {
-        public float area { get; set; }
-        public float perimeter { get; set; }
-        public float sideA { get; set; }  // alla sidor lika långa
-        public float height { get; set; }
+        public float Area { get; set; }
+        public float Perimeter { get; set; }
+        public float SideA { get; set; }
+        public float Height { get; set; }
 
+        /// <summary>
+        /// Calculates the area.
+        /// </summary>
         public float CalculateArea()
-        {   
-            return sideA * height / 2;
+        {
+            return SideA * Height / 2;
         }
 
-        //public float CalculateArea(Square square)
-        //{
-        //    return square.CalculateArea();
-        //}
-
+        /// <summary>
+        /// Calculates the perimeter.
+        /// </summary>
         public float CalculatePerimeter()
         {
-            return sideA * 3;
+            return SideA * 3;
         }
-
-        //public float CalculatePerimeter(Square square)
-        //{
-        //    return square.CalculatePerimeter();
-        //}
     }
 }

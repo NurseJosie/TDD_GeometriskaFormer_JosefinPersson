@@ -1,36 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TDD_GeometriskaFormer_JosefinPersson
+﻿namespace TDD_GeometriskaFormer_JosefinPersson
 {
     public class Circle : IGeometricThing, IGeometricCalculator
     {
-        public float area { get; set; }
-        public float perimeter { get; set; }
-        public float radius { get; set; }
+        public float Area { get; set; }
+        public float Perimeter { get; set; }
+        public float Radius { get; set; }
 
+        /// <summary>
+        /// Calculates the area.
+        /// </summary>
         public float CalculateArea()
         {
-           // radie upphöjt till 2 * PI
-            return (float)((radius * radius) * Math.PI);
+            return (float)((Radius * Radius) * Math.PI);
         }
 
-        //public float CalculateArea(Square square)
-        //{
-        //    return square.CalculateArea();
-        //}
-
+        /// <summary>
+        /// Calculates the perimeter.
+        /// </summary>
         public float CalculatePerimeter()
         {
-            return (float)((radius * 2) * Math.PI);    //diametern * PI
+            return (float)((Radius * 2) * Math.PI);
         }
-
-        //public float CalculatePerimeter(Square square)
-        //{
-        //    return square.CalculatePerimeter();
-        //}
     }
 }
